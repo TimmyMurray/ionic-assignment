@@ -28,8 +28,10 @@
       });
     </script>
   </head>
-  <body ng-app="calorific">
   
+  <body ng-app="calorific">
+ 
+  <ion-content>
 	<div class="bar bar-header bar-balanced">
   <a href="index.html"><button class="button button-icon icon ion-home"></button></a>
   <div class="h1 title">Calorific</div>
@@ -51,13 +53,13 @@
   <div class="item item-avatar">
     <img src="img/steak.png">
     <h2>Steak</h2>
-    <p>A typical steak portion contains 227 calories</p>
+    <p>227 calories</p>
   </div>
 </div>
 
  <div class="list list-inset">
          
-          <button class="button button-block button-positive ion-arrow-up-a" align-title="left"  ng-click="count = count + 227">
+          <button class="button button-block button-dark ion-fork" align-title="left"  ng-click="count = count + 227">
             Add Steak
           </button>
 	</div>
@@ -67,14 +69,39 @@
   <div class="item item-avatar">
     <img src="img/burger.png">
     <h2>Burger</h2>
-    <p>A typical beef burger contains around 295 calories</p>
+    <p>295 calories</p>
   </div>
 </div>
 
+ <div class="list list-inset">
+         
+          <button class="button button-block button-energized ion-android-restaurant" align-title="left"  ng-click="count = count + 295">
+            Add Burger
+          </button>
+	</div>
+	
+	<div class="list card">
+  <div class="item item-avatar">
+    <img src="img/chicken.png">
+    <h2>Chicken Breast</h2>
+    <p> 172 calories</p>
+  </div>
+</div>
+
+ <div class="list list-inset">
+         
+          <button class="button button-block button-assertive ion-android-restaurant" align-title="left"  ng-click="count = count + 172">
+            Add Chicken
+          </button>
+	</div>
 
 
+</ion-content>
+<ion-footer-bar>
 <div class="bar bar-footer bar-balanced">
   <div class="title">Footer</div>
 </div>
+</ion-footer-bar>
+
   </body>
 </html>
