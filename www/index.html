@@ -1,11 +1,13 @@
 <!DOCTYPE html> <html ng="calorific">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, 
+user-scalable=no, width=device-width">
     <title></title>
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <!-- IF using Sass (run gulp sass first), then uncomment below and 
+remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
     <!-- ionic/angularjs js -->
@@ -14,6 +16,8 @@
     <script src="cordova.js"></script>
     <!-- your app's js -->
     <script src="js/app.js"></script>
+	<!--Custom CSS-->
+	<link rel="stylesheet" type="text" href="css/style.css">
   </head>
   
   <body ng-app="calorific" ng-controller="AppCtrl">
@@ -23,37 +27,59 @@
 	<div class="bar bar-header bar-balanced">
   <button class="button button-icon icon ion-home"></button>
   <div class="h1 title">Calorific</div>
-  <button class="button button-positive">Edit</button> </div><br><br> <div id="search-box" class="bar bar-header item-input-inset">
+  <button class="button button-positive">Edit</button>
+  </div><br><br>
+  <div id="search-box" class="bar bar-header item-input-inset">
         <div class="item-input-wrapper">
           <i class="icon ion-ios7-search placeholder-icon"></i>
-          <input type="search" placeholder="Search" ng-model="data.searchQuery">
-          <i class="clear-search icon ion-ios7-close-empty" ng-click="clearSearch()"></i>
+          <input type="search" placeholder="Search" 
+ng-model="data.searchQuery">
+          <i class="clear-search icon ion-ios7-close-empty" 
+ng-click="clearSearch()"></i>
         </div>
         <button class="button button-clear">
           Cancel
         </button>
      </div>
 	
-<a href="meat.html"><div class="list card">
+<a href="meat.html"> <div class="list card">
   <div class="item item-avatar">
     <img src="img/meat.jpg">
-    <h2>Meat</h2>
-    <p>Calorie information On Meat Portions</p>
-  </div></a> </div> <div class="list card">
-  <div class="item item-avatar">
-    <img src="img/veggies.jpg">
-    <h2>Vegetables</h2>
-    <p>Calorie information on vegetable portions</p>
-  </div> </div> <div class="list card">
-  <div class="item item-avatar">
-    <img src="img/dairy.jpg">
-    <h2>Dairy</h2>
-    <p>Calorie information on dairy products</p>
-  </div> </div> <div class="list card">
-  <div class="item item-avatar">
-    <img src="img/fruit.jpg">
-    <h2>Fruit</h2>
-    <p>Calorie information on fruit portions</p>
-  </div> </div> </ion-content> <ion-footer-bar> <div class="bar bar-footer bar-balanced">
-  <div class="title">Footer</div> </div> </ion-footer-bar>
-  </body> </html>
+		<h2>Meat</h2>
+			<p>Meat Portions</p>
+  </div></a> </div>
+  
+  <a href="vegetables.html">
+  <div class="list card">
+	<div class="item item-avatar">
+		<img src="img/veggies.jpg">
+			<h2>Vegetables</h2>
+				<p>Vegetable Portions</p>
+	</div> </a>
+  </div>
+  
+  <div class="list card">
+	<div class="item item-avatar">
+		<img src="img/dairy.jpg">
+			<h2>Dairy</h2>
+				<p>Dairy Portions</p>
+	</div>
+  </div>
+  
+  <div class="list card">
+	<div class="item item-avatar">
+		<img src="img/fruit.jpg">
+			<h2>Fruit</h2>
+				<p>Fruit portions</p>
+	</div>
+  </div>
+  </ion-content>
+  <ion-footer-bar>
+	<div class="bar bar-footer bar-balanced">
+		<a href="contact.html"><button class="button button-icon 
+icon ion-email"></button></a>
+			<div class="title">Calorific
+			</div>
+	</div> </ion-footer-bar>
+  </body>
+ </html>
