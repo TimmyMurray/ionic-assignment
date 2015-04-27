@@ -1,13 +1,11 @@
 <!DOCTYPE html> <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, 
-user-scalable=no, width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- IF using Sass (run gulp sass first), then uncomment below and 
-remove the CSS includes above
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
     <!-- ionic/angularjs js -->
@@ -24,24 +22,26 @@ remove the CSS includes above
     </script>
   </head>
   
-  <body ng-app="calorific">
+<body ng-app="calorific">
  
-  <ion-content>
+<ion-content>
 	<div class="bar bar-header bar-balanced">
-  <a href="index.html"><button class="button button-icon icon 
-ion-home"></button></a>
-  <div class="h1 title">Calorific</div>
-  <button class="button button-positive">Edit</button> </div><br><br>
+		<a href="menu.html"><button class="button button-icon icon ion-home"></button></a>
+		
+			<div class="h1 title">Calorific
+			</div>
+			
+			
+	</div><br><br>
+			
 	<div class="list">
-	<div class="item item-input-inset">
-	 <p>Total:</p><label class="item item-input">
-            <input type="number" ng-model="count">
-          </label>|
-		 <button class="button button-small" ng-click="count = 
-0" >
-       Clear
-        </button>
-	</div>
+		<div class="item item-input-inset">
+		<p>Total: &nbsp </p>
+		<label class="item item-input">
+        <input type="number" ng-model="count">
+        </label>&nbsp
+		<button class="button button-small" ng-click="count = 0" >Clear</button>
+		</div>
 	</div>
 		
 <div class="list card">
@@ -49,42 +49,35 @@ ion-home"></button></a>
     <img src="img/steak.png">
     <h2>Steak</h2>
     <p>227 calories</p>
-  </div> </div>
- <div class="list list-inset">
+  </div> </div> <div class="list list-inset">
          
-          <button class="button button-block button-dark ion-fork" 
-align-title="left" ng-click="count = count + 227">
+        <button class="button button-block button-dark ion-fork"
+		align-title="left" ng-click="count = count + 227">
             Add Steak
-          </button>
-	</div> <div class="list card">
+          </button> </div> <div class="list card">
   <div class="item item-avatar">
     <img src="img/burger.png">
     <h2>Burger</h2>
     <p>295 calories</p>
-  </div> </div>
- <div class="list list-inset">
-         
-          <button class="button button-block button-energized 
-ion-android-restaurant" align-title="left" ng-click="count = count + 
-295">
-            Add Burger
-          </button>
-	</div>
+  </div> </div> <div class="list list-inset">
+   <button class="button button-block button-energized ion-android-restaurant" align-title="left" 
+ng-click="count = count + 295">Add Burger</button> </div>
 	
-	<div class="list card">
+<div class="list card">
   <div class="item item-avatar">
     <img src="img/chicken.png">
     <h2>Chicken Breast</h2>
     <p> 172 calories</p>
-  </div> </div>
- <div class="list list-inset">
+  </div> </div> <div class="list list-inset">
          
-          <button class="button button-block button-assertive 
-ion-android-restaurant" align-title="left" ng-click="count = count + 
-172">
+          <button class="button button-block button-assertive ion-android-restaurant" align-title="left" 
+ng-click="count = count + 172">
             Add Chicken
-          </button>
-	</div> </ion-content> <ion-footer-bar> <div class="bar 
-bar-footer bar-balanced">
-  <div class="title">Footer</div> </div> </ion-footer-bar>
-  </body> </html>
+          </button> </div> </ion-content> <ion-footer-bar>
+	<div class="bar bar-footer bar-balanced">
+		<a href="menu.html"><button class="button button-icon icon ion-arrow-left-c"></button></a>
+		<div class="title">Footer
+		</div>
+	</div> </ion-footer-bar>
+ </body>
+ </html>
